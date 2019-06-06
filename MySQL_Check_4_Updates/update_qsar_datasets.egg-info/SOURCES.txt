@@ -1,0 +1,6 @@
+update_qsar_datasets.egg-info/PKG-INFO
+update_qsar_datasets.egg-info/SOURCES.txt
+update_qsar_datasets.egg-info/dependency_links.txt
+update_qsar_datasets.egg-info/entry_points.txt
+update_qsar_datasets.egg-info/requires.txt
+update_qsar_datasets.egg-info/top_level.txt

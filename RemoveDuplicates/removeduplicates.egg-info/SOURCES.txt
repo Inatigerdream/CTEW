@@ -1,0 +1,7 @@
+removeduplicates.egg-info/PKG-INFO
+removeduplicates.egg-info/SOURCES.txt
+removeduplicates.egg-info/dependency_links.txt
+removeduplicates.egg-info/entry_points.txt
+removeduplicates.egg-info/not-zip-safe
+removeduplicates.egg-info/requires.txt
+removeduplicates.egg-info/top_level.txt

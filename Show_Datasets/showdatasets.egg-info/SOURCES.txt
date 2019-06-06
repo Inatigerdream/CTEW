@@ -1,0 +1,7 @@
+showdatasets.egg-info/PKG-INFO
+showdatasets.egg-info/SOURCES.txt
+showdatasets.egg-info/dependency_links.txt
+showdatasets.egg-info/entry_points.txt
+showdatasets.egg-info/not-zip-safe
+showdatasets.egg-info/requires.txt
+showdatasets.egg-info/top_level.txt

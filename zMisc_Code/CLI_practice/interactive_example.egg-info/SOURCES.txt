@@ -1,0 +1,7 @@
+interactive_example.egg-info/PKG-INFO
+interactive_example.egg-info/SOURCES.txt
+interactive_example.egg-info/dependency_links.txt
+interactive_example.egg-info/entry_points.txt
+interactive_example.egg-info/not-zip-safe
+interactive_example.egg-info/requires.txt
+interactive_example.egg-info/top_level.txt

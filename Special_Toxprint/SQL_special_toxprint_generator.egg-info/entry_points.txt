@@ -1,0 +1,4 @@
+
+    [console_scripts]
+    SQL_special_toxprint_generator=SQL_special_toxprint_generator:cli
+  

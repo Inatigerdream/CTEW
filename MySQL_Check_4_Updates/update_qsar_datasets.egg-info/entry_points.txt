@@ -1,0 +1,4 @@
+
+    [console_scripts]
+    update_qsar_datasets=update_qsar_datasets:cli
+  

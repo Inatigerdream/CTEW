@@ -1,0 +1,4 @@
+
+    [console_scripts]
+    divider=divider:cli
+  

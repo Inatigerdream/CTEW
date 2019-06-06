@@ -1,0 +1,4 @@
+
+    [console_scripts]
+    interactive_example = interactive_example:docopt_cmd
+    

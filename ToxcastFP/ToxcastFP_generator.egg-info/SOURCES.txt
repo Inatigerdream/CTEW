@@ -1,0 +1,7 @@
+ToxcastFP_generator.egg-info/PKG-INFO
+ToxcastFP_generator.egg-info/SOURCES.txt
+ToxcastFP_generator.egg-info/dependency_links.txt
+ToxcastFP_generator.egg-info/entry_points.txt
+ToxcastFP_generator.egg-info/not-zip-safe
+ToxcastFP_generator.egg-info/requires.txt
+ToxcastFP_generator.egg-info/top_level.txt

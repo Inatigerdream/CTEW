@@ -1,0 +1,4 @@
+
+    [console_scripts]
+    fp_combo_gen=fp_combo_gen:cli
+  

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="MySQL - mysql-res1.epa.gov@localhost" uuid="cdd4b40e-78d3-4a8e-8619-6d451241a4a4">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <secret-storage>master_key</secret-storage>
+      <first-sync>true</first-sync>
+      <user-name>rlougee</user-name>
+    </data-source>
+  </component>
+</project>
