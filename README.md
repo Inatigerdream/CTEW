@@ -13,21 +13,20 @@ Enrichment_to_MySQL - CLI deprecated? for generating Chemotype-Enrichments
 FillFingerprints - CLI for pulling fingerprint sets from the database
 fingerprint_combination_generator - CLI for looking at pairwise combinations of fingerprint bits
 ImportDataTabletoMySQL - CLI for importing raw assay hitcall data into the database
-MySQL_Check_4_Updates - 
-MySQL_queries - 
-PullEnrichment - 
-R_chemotype_script - 
-RemoveDuplicates - 
-Show_Datasets - 
-Special_Toxprint - 
-SQL_toxprint - 
-SubCategoryAssayDataTables - 
-ThiDivider -
-ToxcastFP - 
-zMisc_Code - 
-.gitignore - 
+MySQL_Check_4_Updates - CLI for checking for any updates to the database 
+MySQL_queries - various SQL queries
+PullEnrichment - CLI to pull CTEW files out of the database
+R_chemotype_script - deprecated R code
+RemoveDuplicates - CLI that removes duplicate IDs from a datatable
+Show_Datasets - CLI for searching all of the datasets with chemotypeenrichment data
+Special_Toxprint - CLI for generating special toxprints combinations etc
+SQL_toxprint - CLI for generating Toxprint fingerprints and storing them in a database
+SubCategoryAssayDataTables - creates datatables for assay categories first verifies that changes have been made, then creates a new datable
+ThiDivider - deprecated
+ToxcastFP - CLI for creating fingerprints for compounds across assay hit data
+zMisc_Code - Lot's of random stuff in here 
 credentials.yml - login credentials for database connections
-credentials.yml.orig - idk?
+credentials.yml.orig - see above
 requirements.txt - python install requirements
 
 ### Installation
