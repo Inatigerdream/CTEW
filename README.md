@@ -63,12 +63,12 @@ chemotypescripts/SQL_toxprint
 Basic Use of CTEW
 #NCCT KB has a better explaination
 1. Prepare a .tsv file with (casrn, DTXCID, or DTXSID) in the first column and the second column should contain binary assay hitcalls (0,1)
-MyExampleFile.tsv:
-| Chemical ID      | Assay Hitcalls |  
-| :---        |    :----:   |  
-| DTXSID101 | 0 |  
-| DTXSID202 | 1 |  
-| DTXSID303 | 1 |  
+MyExampleFile.tsv:  
+| Chemical ID | Assay Hitcalls |  
+|-------------|----------------|  
+|  DTXSID101  |        0       |  
+|  DTXSID202  |        1       |  
+|  DTXSID303  |        1       |   
 
 2. Before importing the file into the database the Chemical IDs must be changed to DTXCID
 
