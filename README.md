@@ -1,10 +1,11 @@
-CTEW
-Chemotype-Enrichment Workflow
+# CTEW
+## Chemotype-Enrichment Workflow
 
-#see NCCT KB for more information
+#### see NCCT KB for more information
 
 This code contains multiple Command-Line Interfaces (CLI)s for generating Chemotype-Enrichment Workflow (CTEW) data. This CLI integrates directly with the United States Environmental Protection Agency's (USEPA) Center for Computational Toxicology and Exposure (CCTE) databases. The CTEW requires a set of chemical ids (DTXCID, DTXSID, and casrn can currently be used), and assay hitcalls as a binary variable. The CLI tools herein, are used to store the data in the database, generate enrichment statistics, and pull cleaned enrichment data out of the database. Additional CLI's were made for custom fingerprint types, and data preparation.
-Components
+
+## Components
 
 database - database files for establishing connections  
 Chemical_ID_Convert - CLI for converting various chemical IDs (DTXSID, DTXCID, casrn)  
@@ -31,16 +32,16 @@ credentials.yml - login credentials for database connections
 credentials.yml.orig - see above  
 requirements.txt - python install requirements  
 
-Installation
-1. Download the CTEW repo  
-2. In your python virtual environment of choosing install the requirements  
+## Installation
+### 1. Download the CTEW repo  
+### 2. In your python virtual environment of choosing install the requirements  
 ```console
 user@computer:~$ cd path/to/chemotypescripts  
 user@computer:~$ pip install -r requirements.txt  
 # also install this:
 user@computer:~$ pip install mysql-client==2.1.7  
 ```
-3. Install each individual CLI
+### 3. Install each individual CLI
 ```console
 user@computer:~$ cd path/to/chemotypescripts/Chemical_ID_Convert  
 user@computer:~$ pip install -e .  
@@ -48,8 +49,8 @@ user@computer:~$ pip install -e .
 user@computer:~$ chemidconvert -h  
 # this will show usage syntax and flag options if succesfully installed
 ```
-These are the most important directories for CLI installation  
-repeat the commands at the beginning of step 3 for each of these directories  
+### These are the most important directories for CLI installation  
+### repeat the commands at the beginning of step 3 for each of these directories  
 chemotypescripts/Chemical_ID_Convert  
 chemotypescripts/ImportDataTabletoMySQL  
 chemotypescripts/Enrichment_MySQL  
@@ -58,11 +59,11 @@ chemotypescripts/PullEnrichment
 chemotypescripts/Show_Datasets  
 chemotypescripts/SQL_toxprint  
 
-5. Add your username and password to the credentials.yml file  
+### 5. Add your username and password to the credentials.yml file  
 
-Basic Use of CTEW
-#NCCT KB has a better explaination
-1. Prepare a .tsv file with (casrn, DTXCID, or DTXSID) in the first column and the second column should contain binary assay hitcalls (0,1)
+## Basic Use of CTEW
+#### NCCT KB has a better explaination
+### 1. Prepare a .tsv file with (casrn, DTXCID, or DTXSID) in the first column and the second column should contain binary assay hitcalls (0,1)
 MyExampleFile.tsv:  
 | Chemical ID | Assay Hitcalls |  
 |-------------|----------------|  
@@ -70,54 +71,54 @@ MyExampleFile.tsv:
 |  DTXSID202  |        1       |  
 |  DTXSID303  |        1       |   
 
-2. Before importing the file into the database the Chemical IDs must be changed to DTXCID
+### 2. Before importing the file into the database the Chemical IDs must be changed to DTXCID
 
 To just convert the IDs in your file use chemicalidconvert:
 
 ```console
 user@computer:~$ cat MyExampleFile.tsv | chemicalidconvert DTXSID DTXCID -e > MyExampleFile_DTXCID.tsv
 ```
-3. If your file contains a header it can be removed using:
+### 3. If your file contains a header it can be removed using:
 
 ```console
 user@computer:~$ cat MyExampleFile_DTXCID.tsv | tail -n +2 > MyExampleFile_DTXCID.tsv
 ```
 
-4. Remove duplicates
+### 4. Remove duplicates
 
 ```console
 user@computer:~$ cat MyExampleFile_DTXCID.tsv | removeduplicates --anyhit > MyExampleFile_DTXCID.tsv
 ```
 
-5. Add the file to the database
+### 5. Add the file to the database
 
 ```console
 user@computer:~$ cat MyExampleFile_DTXCID.tsv | datatable2mysl "MyExampleFile_v1_RLOUGEE" "rlougee"
 ```
 
-6. You can see if you datatable has been added using:
+### 6. You can see if you datatable has been added using:
 ```console
 user@computer:~$ showdatasets
 ```
 
-7. Create enrichment data using:
+### 7. Create enrichment data using:
 ```console
 user@computer:~$ enrich_mysql
 ```
 
-8. Once this is complete you can pull enrichment data using:
+### 8. Once this is complete you can pull enrichment data using:
 ```console
 user@computer:~$ pullenrichment "MyExampleFile_v1_RLOUGEE"
 ```
 
-Improvements for v2
-1. Put all of this into one CLI
-2. Require user ID & password upon installation & verify (dataminer is getting removed)
-3. Remove deprecated code
-4. Make seperate repos for zMisc_code etc.
-5. Update requirements if possible (Hopefully this will improve installation)
+## Improvements for v2
+### 1. Put all of this into one CLI
+### 2. Require user ID & password upon installation & verify (dataminer is getting removed)
+### 3. Remove deprecated code
+### 4. Make seperate repos for zMisc_code etc.
+### 5. Update requirements if possible (Hopefully this will improve installation)
 
 
-Disclaimer
+## Disclaimer
 
-importdataset - CLI
+disclaimed
