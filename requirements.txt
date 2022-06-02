@@ -11,7 +11,7 @@ future==0.17.0
 ggplot==0.11.5
 graphviz==0.9
 hpsklearn==0.0.3
-html5lib==0.9999999
+html5lib==0.99999999
 hyperopt==0.1.1
 Markdown==2.6.9
 matplotlib==2.1.1
